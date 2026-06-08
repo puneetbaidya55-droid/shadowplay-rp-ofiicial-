@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shadowplay RP | Official Website</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Neon Background -->
+<div class="neon blue"></div>
+<div class="neon purple"></div>
+
+<!-- Particles -->
+<div class="particles" id="particles"></div>
+
+<!-- Hero Section -->
+<section class="intro">
+
+<h1 class="logo">SHADOWPLAY RP</h1>
+
+<p class="subtitle">
+The Next Generation Roleplay Experience
+</p>
+
+<div class="coming">
+OFFICIAL SERVER • COMING SOON
+</div>
+
+<div class="btns">
+
+<a href="https://discord.gg/D5q6NHAvq" target="_blank" class="btn discord">
+Join Our Discord
+</a>
+
+<a href="#features" class="btn learn">
+Explore More
+</a>
+
+</div>
+
+</section>
+
+<!-- Features -->
+<section id="features" class="hidden">
+
+<h2 class="title">Server Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Realistic Economy</h3>
+<p>
+Build your wealth through jobs, businesses, investments and realistic financial systems.
+</p>
+</div>
+
+<div class="card">
+<h3>Police Department</h3>
+<p>
+Professional law enforcement roleplay with realistic procedures and advanced systems.
+</p>
+</div>
+
+<div class="card">
+<h3>Housing System</h3>
+<p>
+Purchase and customize your dream property across the city.
+</p>
+</div>
+
+<div class="card">
+<h3>Custom Vehicles</h3>
+<p>
+Drive exclusive vehicles with custom modifications and realistic handling.
+</p>
+</div>
+
+<div class="card">
+<h3>Government Roleplay</h3>
+<p>
+Participate in elections and shape the future of the city.
+</p>
+</div>
+
+<div class="card">
+<h3>Player Businesses</h3>
+<p>
+Create and manage successful businesses in a living economy.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Development -->
+<section class="hidden">
+
+<h2 class="title">Development Update</h2>
+
+<div class="development-card">
+
+<h3>Shadowplay RP Is Under Development</h3>
+
+<p>
+Shadowplay RP is currently being developed to provide a premium roleplay experience with advanced systems, immersive gameplay and realistic city life.
+</p>
+
+<p>
+Our development team is actively working on custom features, realistic economy systems, factions, businesses, properties and much more.
+</p>
+
+<div class="status-grid">
+
+<div class="status-box">
+<span>🌐</span>
+<h4>Website</h4>
+<p>Completed</p>
+</div>
+
+<div class="status-box">
+<span>⚙️</span>
+<h4>Server Systems</h4>
+<p>In Progress</p>
+</div>
+
+<div class="status-box">
+<span>🗺️</span>
+<h4>Mapping</h4>
+<p>In Progress</p>
+</div>
+
+<div class="status-box">
+<span>🧪</span>
+<h4>Testing</h4>
+<p>Coming Soon</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+<section class="hidden">
+
+<h2 class="title">About Shadowplay RP</h2>
+
+<div class="development-card">
+
+<p>
+Shadowplay RP is a next-generation roleplay community built around immersive storytelling, realistic gameplay and a player-driven world.
+</p>
+
+<p>
+Whether you choose law enforcement, government, business ownership or civilian life, your actions help shape the future of the city.
+</p>
+
+</div>
+
+</section>
+
+<!-- Team -->
+<section class="hidden">
+
+<h2 class="title">Development Team</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Owner</h3>
+<p>Ryan Escobar</p>
+</div>
+
+<div class="card">
+<h3>Developer</h3>
+<p>dev_Ryan</p>
+</div>
+
+<div class="card">
+<h3>Project</h3>
+<p>Shadowplay RP</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Join Discord -->
+<section class="hidden">
+
+<h2 class="title">Join Our Community</h2>
+
+<div class="development-card">
+
+<h3>Become Part of Shadowplay RP</h3>
+
+<p>
+Stay updated with development news, announcements, sneak peeks and future release information.
+</p>
+
+<br>
+
+<a href="https://discord.gg/D5q6NHAvq" target="_blank" class="btn discord">
+Join Discord Server
+</a>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+<p>© 2026 Shadowplay RP. All Rights Reserved.</p>
+
+<p>Official Roleplay Community</p>
+
+<p>
+<a href="https://discord.gg/D5q6NHAvq"
+target="_blank"
+style="color:#00d4ff;text-decoration:none;font-weight:600;">
+Join Our Discord Community
+</a>
+</p>
+
+</footer>
+
+<script>
+
+/* Animated Particles */
+
+const particles = document.getElementById("particles");
+
+for(let i = 0; i < 120; i++){
+
+let particle = document.createElement("span");
+
+particle.style.left = Math.random() * 100 + "%";
+particle.style.top = Math.random() * 100 + "%";
+particle.style.animationDuration = (10 + Math.random() * 15) + "s";
+particle.style.opacity = Math.random();
+
+particles.appendChild(particle);
+
+}
+
+/* Scroll Reveal Animation */
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".hidden").forEach(el => {
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+</html>
